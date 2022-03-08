@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <title>Calculadora de riesgo</title>
+  </head>
+  <body>
+    <main class="BMI container">
+      <h1 class="BMI__title">Cálculo de Riesgo de COVID basado en el IMC</h1>
+      <div class="BMI__form">
+        <label>Peso (kg)</label>
+        <input type="number" id="weight" class="BMI__input"/>
+        <label>Altura (cm)</label>
+        <input type="number" id="height" class="BMI__input"/>
+        <button class="BMI__process button" id="process">Procesar</button>
+      </div>
+      <div class="result">
+        <h3>Resultado:</h3>
+        <h3 class="BMI__result" id="result">Sin procesar</h3>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
