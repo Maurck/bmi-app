@@ -127,7 +127,7 @@ const calcButtonHTMLOnClick = () => {
   setRiskInHTML(bmi);
 };
 
-const setelementsHTML = () => {
+const setElementsHTML = () => {
   elementsHTML.calcButtonHTML = document.getElementById("process");
   elementsHTML.resultHTML = document.getElementById("result");
   elementsHTML.bmiHTML = document.getElementById("bmi");
@@ -151,7 +151,7 @@ const resetResults = () => {
 };
 
 const setBtnClick = () => {
-  setelementsHTML();
+  setElementsHTML();
 
   elementsHTML.calcButtonHTML.addEventListener("click", () => {
     resetResults();
