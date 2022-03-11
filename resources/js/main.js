@@ -46,7 +46,7 @@ const classifications = [
   },
   {
     name: "Obesidad III",
-    max: Math.infinity,
+    max: Infinity,
   },
 ];
 
@@ -86,6 +86,8 @@ const setTextInElement = (element, text) => {
 
 const getClassification = (bmi) => {
   let classification = "Normal";
+
+  debugger;
 
   classifications.some((clasif) => {
     if (bmi <= clasif.max) {
