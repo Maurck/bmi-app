@@ -118,8 +118,8 @@ const setRiskInHTML = (bmi) => {
 };
 
 const calcButtonHTMLOnClick = () => {
-  let weight = getParameter("weight").value;
-  let height = getParameter("height").value;
+  const weight = getParameter("weight").value;
+  const height = getParameter("height").value;
 
   const bmi = (weight / (height * height)) * 10000;
 
