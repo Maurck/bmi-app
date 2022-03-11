@@ -86,9 +86,7 @@ const setTextInElement = (element, text) => {
 
 const getClassification = (bmi) => {
   let classification = "Normal";
-
-  debugger;
-
+  
   classifications.some((clasif) => {
     if (bmi <= clasif.max) {
       classification = clasif.name;
